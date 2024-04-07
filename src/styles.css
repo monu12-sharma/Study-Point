@@ -1,0 +1,284 @@
+/* Google Fonts - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  min-height: 100%;
+  background: #e3f2fd;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background: #fff;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.1);
+}
+nav .logo {
+  display: flex;
+  align-items: center;
+  margin: 0 24px;
+}
+.logo .menu-icon {
+  color: #333;
+  font-size: 24px;
+  margin-right: 14px;
+  cursor: pointer;
+}
+.logo .logo-name {
+  color: #333;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+/* Sidebar-specific styles */
+nav .sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 100%;
+  width: 260px;
+  padding: 20px 20px;
+  background-color: #fff;
+  box-shadow: 0 5px 1px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+nav.open .sidebar {
+  left: 0;
+}
+.sidebar .sidebar-content {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 16px;
+  flex: 1;
+}
+.sidebar-content .list {
+  list-style: none;
+}
+.sidebar .lists,
+.sidebar .bottom-content {
+  list-style: none;
+  padding: 0;
+}
+.sidebar .bottom-content {
+  margin-top: auto;
+}
+.sidebar .list {
+  margin: 8px 0;
+}
+.list .nav-link {
+  display: flex;
+  align-items: center;
+  margin: 8px 0;
+  padding: 14px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+.lists .nav-link:hover {
+  background-color: #4070f4;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.nav-link .icon {
+  margin-right: 14px;
+  font-size: 20px;
+  color: #707070;
+}
+.nav-link .link {
+  font-size: 16px;
+  color: #707070;
+  font-weight: 400;
+}
+.lists .nav-link:hover .icon,
+.lists .nav-link:hover .link {
+  color: #fff;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  height: 1000vh;
+  width: 200%;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.4s ease;
+  background: rgba(0, 0, 0, 0.3);
+}
+nav.open ~ .overlay {
+  opacity: 1;
+  left: 260px;
+  pointer-events: auto;
+}
+
+.Btech1{
+
+  border-color: black;
+  min-height: 1px;
+  padding: 1.25rem;
+  color: white;
+  margin: 12px;
+  border-radius: 30px;
+  text-align: center;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin-top:20px;
+  
+}
+
+#c1{
+  background-color: blue;
+  width: auto;
+  font-size: 30px;
+  
+}
+
+#c2{
+  background-color: rgb(13, 255, 0);
+  width: auto;
+  font-size: 30px;
+  
+}
+
+#c3{
+  background-color: rgb(255, 102, 0);
+  width: auto;
+  font-size: 30px;
+  
+}
+
+#c4{
+  background-color: rgb(255, 0, 106);
+  width: auto;
+  font-size: 30px;
+  
+}
+
+#c5{
+  background-color: rgb(0, 255, 208);
+  width: auto;
+  font-size: 30px;
+  
+}
+
+
+
+#mm{
+ 
+  
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+
+.sub{
+  background-color:#bb2605;
+  border-radius: 9px;
+  text-align: center;
+  margin: 20px auto;
+  margin-left: 3px;
+  margin-right: 3px;
+  padding: 20px;
+  width: 420px;
+  height: auto;
+  flex-wrap: wrap;
+  flex-direction: column;
+  display: flex;
+  
+}
+
+.sub{
+  position: static;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-clip: border-box;
+  margin-left: 50px;
+}
+
+.down{
+  border: 6px;
+  border-color: black;
+  border-radius: 5px;
+  background-color: #0000ff;
+  color: white;
+  box-sizing: 20px;
+  padding: 10px 20px;
+  font-size: 20px;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.course{
+  text-align: center;
+  font-size: 50px;
+}
+
+.year{
+  text-align: center;
+  font-size: 35px;
+  border-radius: 6px;
+  color: #333;
+  
+}
+
+.card{
+  border-radius: 3px;
+  border-color: #333;
+  background-color: #707070;
+  
+  box-sizing: content-box;
+}
+
+
+
+
+
+
+.social-link {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  border-radius: 50%;
+  transition: all 0.3s;
+  font-size: 0.9rem;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background: #ddd;
+  text-decoration: none;
+  color: #555;
+}
